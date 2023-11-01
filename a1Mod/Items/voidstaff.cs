@@ -5,18 +5,18 @@ using Microsoft.Xna.Framework;
 
 namespace a1Mod.Items
 {
-	public class a1staff : ModItem
+	public class voidstaff : ModItem
 	{
 		public override void SetStaticDefaults() 
 		{
-			DisplayName.SetDefault("a1's Staff"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
-			Tooltip.SetDefault("A magic staff used by a1 during his takeover of hell.");
+			DisplayName.SetDefault("Void Staff"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			Tooltip.SetDefault("FOR THE FUNNI");
 			Item.staff[item.type] = true;
 		}
 
 		public override void SetDefaults() 
 		{
-			item.damage = 666;
+			item.damage = 99999;
 			item.mana = 5;
 			item.magic = true;
 			item.width = 80;
@@ -30,7 +30,7 @@ namespace a1Mod.Items
 			item.UseSound = SoundID.Item15;
 			item.autoReuse = true;
 			item.scale = 1.0f;
-			item.shoot = mod.ProjectileType("a1Projectile");
+			item.shoot = mod.ProjectileType("voidshot");
 			item.shootSpeed = 5f;
 			item.noMelee = true;
 		}
@@ -41,14 +41,5 @@ namespace a1Mod.Items
 			position += offset;
 			return true;
         }
-
-        public override void AddRecipes() 
-		{
-			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.DirtBlock, 1);
-			recipe.AddTile(TileID.WorkBenches);
-			recipe.SetResult(this);
-			recipe.AddRecipe();
-		}
 	}
 }

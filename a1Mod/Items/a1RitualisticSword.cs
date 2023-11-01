@@ -17,8 +17,8 @@ namespace a1Mod.Items
 			item.melee = true;
 			item.width = 80;
 			item.height = 80;
-			item.useTime = 45;
-			item.useAnimation = 45;
+			item.useTime = 20;
+			item.useAnimation = 20;
 			item.useStyle = 1;
 			item.knockBack = 12;
 			item.value = 100000;
