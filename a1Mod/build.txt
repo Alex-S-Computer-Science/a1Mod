@@ -1,0 +1,3 @@
+displayName = a1's Mod
+author = a1minecraftbuild
+version = 0.1
